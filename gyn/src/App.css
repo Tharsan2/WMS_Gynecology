@@ -1,0 +1,924 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  position: relative;
+  max-width: 950px;
+  width: 100%;
+  border-radius: 6px;
+  padding: 30px;
+  margin: 100px 15px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3) ;
+}
+
+.container header{
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.container form .details{
+  margin-top: 10px;
+}
+
+.container form .title{
+  display: block;
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px 0;
+  color: #ffffff;
+  background-color: #512da8;
+  border-radius: 6px;
+}
+
+  .btn{
+  text-align: end;
+  margin-top: -50px;
+}
+
+.btn1{
+  text-align: end;
+}
+
+button{
+  background-color: #512da8;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 45px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: indigo;
+  color: white;
+}
+
+.container form .fields1{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+form .fields1 .input-field{
+  display: flex;
+  margin-right: 5%;
+  flex-direction: column;
+}
+.container form .fields{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+form .fields .input-field{
+  display: flex;
+  width: 410px;
+  margin-right: 30px;
+  flex-direction: column;
+}
+
+.input-field label, .input-fieldL label,.input-field-phn label, .input-field-add label, .input-fieldH label, .input-fieldB label, .input-fieldC label, .input-fieldN label,.input-fieldA label{
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+}
+
+form .fields .input-fieldR{
+  display: flex;
+  width: 220px;
+  margin-right: 30px;
+  flex-direction: row;
+}
+
+.input-fieldR label{
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 20px;
+  color: black;
+}
+
+form .fields .input-fieldX,.input-fieldX2{
+  display: flex;
+  width: 110px;
+  margin-right: 30px;
+  flex-direction: column;
+}
+
+.input-fieldX p{
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 20px;
+  color: black;
+}
+
+.input-fieldX label{
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: -25px;
+  margin-left: 40px;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.input-fieldX input{
+  outline: none;
+  height: 16px;
+  width: 50px;
+  margin: 8px 0;
+}
+
+.input-fieldX2 label{
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-left: 40px;
+  color: black;
+}
+
+.input-fieldX2 input{
+  outline: none;
+  height: 16px;
+  width: 50px;
+  margin: 8px 0;
+  margin-bottom: -25px;
+}
+
+form .fields .input-fieldM{
+  display: flex;
+  width: 275px;
+  margin-right: 0px;
+  flex-direction: column;
+}
+
+.input-fieldM p{
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-right: 20px;
+  color: black;
+}
+
+.input-fieldM label{
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: -25px;
+  margin-left: 40px;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.input-fieldM input{
+  outline: none;
+  height: 16px;
+  width: 50px;
+  margin: 8px 0;
+}
+
+.container form .fieldsCheck{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+form .fieldsCheck .input-Check{
+  display: flex;
+  width: 275px;
+  margin-right: 0px;
+  flex-direction: column;
+}
+
+.input-Check p{
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-right: 20px;
+  color: black;
+}
+
+.input-Check label{
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  color: black;
+}
+
+.input-Check input{
+  outline: none;
+  height: 16px;
+  width: 50px;
+  margin: 8px 0;
+}
+
+form .fieldsCheck .input-Check .input-fieldCheck{
+  display: flex;
+  width: 410px;
+  margin-right: 30px;
+  flex-direction: column;
+}
+
+.input-fieldCheck input{
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  border: 1px solid #aaa;
+  padding: 0 15px;
+  height: 42px;
+  margin: 8px 50px;
+  width: 250px;
+}
+-----------------------
+form .fields .input-fieldA{
+  display: flex;
+  width: 80px;
+  margin-right: 30px;
+  flex-direction: column;
+}
+
+.input-fieldA p{
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-right: 20px;
+  color: black;
+}
+
+.input-fieldA label{
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: -25px;
+  margin-left: 40px;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.input-fieldA input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    width: 150px;
+    margin: 8px 0;
+}
+----------------------------
+.unit1 p{
+  margin-left: -25px;
+  margin-right: 35px;
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.unit2 p{
+  margin-left: -35px;
+  margin-right: 35px;
+  margin-top: 10px;
+  font-size: 10px;
+}
+
+form .fields .input-fieldH{
+  display: flex;
+  width: 80px;
+  margin-right: 30px;
+  flex-direction: column;
+}
+
+form .fields .input-fieldB{
+  display: flex;
+  width: 150px;
+  margin-right: 30px;
+  flex-direction: column;
+}
+
+form .fields .input-fieldC{
+  display: flex;
+  width: 250px;
+  margin-right: 30px;
+  flex-direction: column;
+}
+
+form .fields .input-fieldN{
+  display: flex;
+  width: 153px;
+  margin-right: 30px;
+  flex-direction: column;
+}
+
+.input-fieldH input,.input-fieldA input, .input-fieldB input, .input-fieldN input, .input-fieldC select, .input-field input,select{
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  border: 1px solid #aaa;
+  padding: 0 15px;
+  height: 42px;
+  margin: 8px 0;
+}
+
+.input-field-phn input{
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  border: 1px solid #aaa;
+  padding: 0 0 0 15px ;
+  height: 42px;
+  margin: 8px 0;
+  width: 120px;
+}
+
+.input-field-add input{
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  border: 1px solid #aaa;
+  padding: 0 0 0 15px ;
+  height: 42px;
+  margin: 8px 0;
+  width: 80px;
+}
+
+
+.input-field textarea{
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  border: 1px solid #aaa;
+  padding: 0 15px;
+  margin: 8px 0;
+}
+
+.input-field input, .input-fieldCheck input, .input-field-phn input, .input-field-add input, .input-fieldH input, .input-fieldA input, textarea, .input-fieldN input, .input-fieldN select, .input-fieldC select,.input-fieldB input, .input-fieldH input:is(:focus, :valid){
+  box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+
+.input-field input[type="date"]{
+  color: #707070;
+}
+
+.input-field input[type="date"]:valid{
+  color: #333;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  position: relative;
+  padding-left: 20px; 
+  cursor: pointer;
+}
+
+input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 13px; 
+  height: 13px; 
+  background-color: #ffffff; 
+  border-radius: 100%; 
+  border: 1px solid;
+}
+
+input[type="radio"]:checked + label::before {
+  background-color: #512da8;
+}
+
+input[type="radio"] + label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 5px;
+  height: 5px;
+  background-color: #ffffff;
+  border-radius: 100%;
+  display: none;
+}
+
+.button{
+  align-items: center;
+  background-color: rgba(240, 240, 240, 0.26);
+  border: 1px solid #DFDFDF;
+  border-radius: 16px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 28px;
+  max-width: 100%;
+  padding: 14px 22px;
+  text-decoration: none;
+  transition: all .2s;
+  touch-action: manipulation;
+  width: 48%;
+}
+
+.button:active,
+.button:hover {
+  outline: 0;
+}
+
+.button:hover {
+  background-color: #FFFFFF;
+  border-color: rgba(0, 0, 0, 0.19);
+}
+#status{
+  color: black;
+  font-size: 14px;
+  width: 250px;
+}
+.status{
+  background-color: #000000;
+}
+
+form .dropdownflex {
+  display: flex;
+  width: 250px;
+  flex-direction: row;
+}
+.input-fieldL{
+  margin-right: 19px;
+}
+@media (min-width: 768px) {
+  .button{
+    font-size: 20px;
+    min-width: 200px;
+    padding: 14px 16px;
+  }
+}
+
+.navM {
+  position: fixed;
+  background-color: #222;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.navM .containerN {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.navM ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.navM a {
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+  font-size: 15px;
+}
+
+.navM .a {
+  font-size: 22px;
+  color: black;
+}
+
+.navM.active {
+  background: white;
+}
+
+.navM.active a {
+  color: #000;
+}
+
+.card {
+  position: relative;
+  width: 900px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  margin:  0;
+  justify-content: center;
+}
+
+.card1 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card header{
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+.profile {
+  position: relative;
+  width: 830px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 8px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  margin: 0;
+}
+
+.c1 {
+  position: relative;
+  width: 250px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 8px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  margin: 20px;
+}
+
+.card p1{
+  font-size: 12px;
+}
+
+.card .button_show{
+  background-color: transparent;
+  color: blue;
+  font-size: 12px;
+  padding: 0;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  margin: 0px 0px 0px 0px;
+  cursor: pointer;
+}
+
+.card .title{
+  display: block;
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px 0;
+  color: #ffffff;
+  background-color: #512da8;
+  border-radius: 6px;
+}
+
+.profile-about {
+  position: relative;
+  width: 500px;
+  background-color: #fff;
+  padding: 16px;
+  margin: 0;
+}
+
+.profile-about p{
+  font-size: 13px;
+}
+
+.cntner{
+  width: 700px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  margin: 20px 20px 20px 80px;
+  
+}
+
+.cntner .cd{
+  position: relative;
+}
+
+.cntner .cd .face{
+  width: 200px;
+  height: 130px;
+  transition:.4s;
+  border-radius: 5px;
+}
+
+.cntner .cd .face.face1{
+  position: relative;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-content:center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(30.35px);
+  cursor: pointer;
+}
+
+.cntner .cd:hover .face.face1{
+  transform: translateY(0);
+  box-shadow:
+    0 0 50px #fff,
+    -5px 0px rgb(0, 0, 0),
+    5px 0 0px black;
+   
+}
+
+
+.cntner .cd .face.face1 .content{
+  opacity: 0.6;
+  transition:  0.5s;
+  text-align: center;
+}
+
+.cntner .cd:hover .face.face1 .content{
+  opacity: 1;
+ 
+}
+
+.cntner .cd .face.face1 .content i{
+  font-size: 3em;
+  color: white;
+  display: inline-block;
+   
+}
+
+.cntner .cd .face.face1 .content h3{
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.cntner .cd .face.face1 .content a{
+   transition: .5s;
+}
+
+.cntner .cd .face.face2{
+  position: relative;
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  transform: translateY(-100px);
+  margin-top: 0px;
+}
+
+.cntner .cd:hover .face.face2{
+    transform: translateY(0);
+}
+
+.cntner .cd .face.face2 .content p, a{
+  font-size: 10pt;
+  margin: 0 ;
+  padding: 0;
+  color:#333;
+  text-decoration: none;
+}
+
+.cntner .cd .face.face2 .content a{
+  text-decoration:none;
+  color: black;
+  box-sizing: border-box;
+  outline : 1px dashed #333;
+  padding: 5px;
+  margin: 15px 0 0;
+  display: inline-block;
+}
+
+.cntner .cd .face.face2 .content a:hover{
+  background: #333 ;
+  color: whitesmoke; 
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+#invalid{
+border: 7px solid red;
+  
+}
+.popup{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  background-color: #979797;
+  transform: translate(-50%, -50%);
+}
+.box{
+  text-align: center;
+  position: relative;
+  width: 450px;
+  height: 230px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  padding-right: 20px;
+
+}
+.popup_button2{
+  text-align: center;
+  margin-top: 60px;
+  margin-left: 100px;
+}
+
+#staff_heading{
+  margin-top: -270px;
+  padding-bottom: 30px;
+}
+
+.staff_table{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 50px;
+}
+
+.space{
+  margin: 30px;
+}
+
+.space2{
+  margin: 60px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.heading{
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+.main-content {
+  display: flex;
+  flex: 1;
+  flex-direction:row;
+  width: 100%;
+}
+
+.input-field-phn, .input-field-add{
+  width: 120px;
+}
+
+.input-field-add{
+  width: 120px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.user-role-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between the icon and the text */
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user {
+  font-size: 1.5rem;
+  color: #333; /* Adjust icon color */
+}
+
+.role-text {
+  background-color: #3e6ea2; /* Color for the half-circle */
+  color: white;
+  padding: 5px 15px;
+  border-radius: 15px; /* Rounded edges */
+  margin-left: 10px; /* Space between the icon and role text */
+}
+
+
+.contact-container{
+  position: relative;
+  width: 500px;
+  border-radius: 70px 0;
+  padding: 50px;
+  margin: 100px 15px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact_input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact_button {
+  padding: 10px 20px; 
+  margin: 15px 10px;
+  width: 100%;
+  background-color: #512da8;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 auto;
+  /* box-shadow: 0 8px 24px hsla(29, 75%, 56%, 0.3); */
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
+.contact_button:hover {
+  background-color: indigo;
+}
+
+.contact-input {
+  margin: 15px 0px;
+  padding: 20px;
+  width: 100%;
+  height: 35px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+  border: 1px solid #ccc;
+  color: indigo;
+}
+
+.contact-textarea {
+  margin: 15px 0px;
+  padding: 10px;
+  width: 100%;
+  height: 120px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: indigo;
+}
+
+.pagination-bar{
+  margin: 10px 10px 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.page-button{
+  background-color: white;
+  color: #512da8;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  margin: 10px;
+  font-size: smaller;
+}
+
+.page-button-current{
+  background-color: white;
+  color: #512da8;
+  border-radius: 100%;
+  border: #512da8 1px solid;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  margin: 10px;
+  font-size: smaller;
+}
+
+.page-button :hover{
+  background-color: red;
+}
